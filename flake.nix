@@ -58,9 +58,9 @@
             srcDir = self;
             nixComponents =
               if nixVersion == "latest" then
-                pkgs.nixVersions.nixComponents_latest
+                pkgs.nixVersions.nix_latest
               else
-                pkgs.nixVersions."nixComponents_${nixVersion}";
+                pkgs.nixVersions."nix_${nixVersion}";
           };
         in
         {
